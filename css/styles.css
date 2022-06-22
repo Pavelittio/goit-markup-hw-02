@@ -12,13 +12,13 @@
     --second-text-color: #757575;
     --color-text-footer: rgba(255, 255, 255, 0.6);
     --footer-color: #2F303A;
+    --button-background: #F5F4FA;
 }
 
 /* Общие стили для тега боди */
 body{
-    background-color: #fff;
-    font-family: roboto, sans-serif;
-    color: #212121;
+    font-family: Roboto, sans-serif;
+    color: var(--main-text-color)
 }
 
 
@@ -37,14 +37,13 @@ ul {
         font-weight: 700;
         font-size: 24px;
         line-height: 1.2;
-        /* identical to box height */
         letter-spacing: 0.03em;
         color: var(--brend-color);
+        text-decoration: none;
 }
 /* HADER */
 /* Навигация */
 .site-nav a {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
@@ -57,7 +56,6 @@ ul {
 }
 
 .auth-link {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
@@ -65,25 +63,30 @@ ul {
     color: var(--second-text-color);
 }
 
+.auth-link:hover, 
+.auth-link:focus {
+    color: var(--main-text-color);
+}
+
 .filter-button {
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    background-color: var(--button-background);
+    cursor: pointer;
 }
 
 .filter-button.filter:hover,
 .filter-button.filter:focus
  {
-    cursor: pointer;
     background-color: var(--brend-color);
+    color: #fff;
 }
 /* Область карточек */
 .card-title {
-font-family: 'Roboto';
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
@@ -92,9 +95,8 @@ color: var(--main-text-color);
 }
 
 .card-filter {
-    font-family: 'Roboto';
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.9;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
 }
@@ -102,29 +104,90 @@ color: var(--main-text-color);
 /* Footer */
 
 .background-footer {
-    background: var(--footer-color);
+    background-color: var(--footer-color);
 }
 
 .logo-footer {
     color: var(--white);
+    text-decoration: none;
 }
 
 .adress {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--white);
 }
 
 .footer-auth {
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-        color: var(--color-text-footer);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--color-text-footer);
+    text-decoration: none;
+}
+
+.footer-auth:hover,
+.footer-auth:focus {
+    color: var(--white);
+}
+
+/* index.html */
+/* кнопка героя */
+.hero {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+}
+
+.hero-button {
+    background-color: var(--brend-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    cursor: pointer;
+}
+/* преимущества */
+.advanteges h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+}
+
+.advanteges p {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
+
+.info-heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+.our-team h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+.our-team p {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
 }
