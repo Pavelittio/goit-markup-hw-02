@@ -42,6 +42,9 @@ ul {
         text-decoration: none;
 }
 /* HADER */
+.link {
+    text-decoration: none;
+}
 /* Навигация */
 .site-nav a {
     font-weight: 500;
@@ -65,7 +68,7 @@ ul {
 
 .auth-link:hover, 
 .auth-link:focus {
-    color: var(--main-text-color);
+    color: var(--brend-color);
 }
 
 .filter-button {
@@ -117,6 +120,7 @@ color: var(--main-text-color);
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--white);
+    font-style: normal;
 }
 
 .footer-auth {
@@ -129,10 +133,10 @@ color: var(--main-text-color);
 
 .footer-auth:hover,
 .footer-auth:focus {
-    color: var(--white);
+    color: var(--brend-color);
 }
 
-/* index.html */
+/* index.html MAIN*/
 /* кнопка героя */
 .hero {
     font-weight: 900;
@@ -140,10 +144,12 @@ color: var(--main-text-color);
     line-height: 1.4;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--main-text-color);
+    color: var(--white);
+    background-color: #2F303A;
 }
 
 .hero-button {
+    font-family: inherit;
     background-color: var(--brend-color);
     font-weight: 700;
     font-size: 16px;
@@ -153,16 +159,16 @@ color: var(--main-text-color);
     cursor: pointer;
 }
 /* преимущества */
-.advanteges h2 {
+.advanteges-h2 {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1,2;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-text-color);
 }
 
-.advanteges p {
+.advanteges-p {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -177,7 +183,7 @@ color: var(--main-text-color);
     color: var(--main-text-color);
 }
 
-.our-team h3 {
+.our-team-h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -185,7 +191,7 @@ color: var(--main-text-color);
     color: var(--main-text-color);
 }
 
-.our-team p {
+.our-team-p {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
